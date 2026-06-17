@@ -312,12 +312,14 @@ function Hero({ onNav }: { onNav: (s: string) => void }) {
         >
           {[
             { icon: <Mail size={16} />, href: "mailto:jinyonggan10@gmail.com" },
-            { icon: <Github size={16} />, href: "#" },
-            { icon: <Linkedin size={16} />, href: "#" },
+            { icon: <Github size={16} />, href: "https://github.com/AshCloud882" },
+            { icon: <Linkedin size={16} />, href: "https://www.linkedin.com/in/gan-jin-yong-6009bb372/" },
           ].map((s, i) => (
             <a
               key={i}
               href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 border: "1px solid rgba(255,255,255,0.1)",
                 color: "#94a3b8",
@@ -1180,7 +1182,7 @@ function Footer() {
       className="py-8 px-8 text-center"
     >
       <p style={{ color: "#334155" }} className="text-sm">
-        © 2025 Gan Jin Yong · Built with React & Tailwind
+        2026 Gan Jin Yong · Built with React & Tailwind
       </p>
     </footer>
   );
